@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+*,
+:root {
+
+    margin: 0;
+    padding: 0;
+    font-family: 'inter';
+}
+
+
+
+main {
+    margin: 0 auto;
+    max-width: 640px;
+    padding: 20px;
+
+}
+
+#acertos {
+
+    text-align: center;
+    background-color: greenyellow;
+
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+
+    width: 100%;
+    padding: 12px;
+
+}
+
+#quiz {
+
+    margin-bottom: 2.5rem;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+
+
+}
+
+h1 {
+    color: #f1f5f9;
+    font-size: 30px;
+    padding: 16px 20px;
+
+}
+
+h3 {
+    padding: 16px 20px;
+    color: #e2e8f0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.quiz-item {
+    border: solid #475569;
+    border-radius: 6px;
+    margin-top: 24px;
+    counter-increment: quiz-item;
+    align-items: center;
+    overflow: hidden;
+}
+
+.quiz-item h3:before {
+    content: counter(quiz-item);
+
+    background-color: #475569;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem;
+
+
+}
+
+.title-conteiner {
+
+    background-color: #1e2938;
+}
+
+.divider {
+
+    background: #e2e8f0;
+    height: 1px;
+    opacity: 0.5;
+}
+
+dl {
+    color: #e2e8f0;
+    padding: 20px 24px;
+    display: grid;
+    gap: 8px;
+}
+
+/*dl dt{ 
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0;
+align-items: center;
+gap: 8px;
+
+}
+/*input {
+    
+margin-top: 10px ;
+all:unset;
+border: 1px solid #94a3b9;
+height: 16px;
+width: 16px;
+border-radius:50%;
+display: flex;
+align-items: center;
+justify-content: center;
+    
+}*/
+input:checked {
+
+    border: 1px solid #a3e635;
+}
+
+input:checked:before {
+
+    content: "";
+    width: 10px;
+    height: 10px;
+    display: block;
+    background-color: #a3e635;
+    border-radius: 50%;
+
+
+
+}
+
+
+
+.resposta-item {
+
+    display: flex;
+
+}
+
+dl dt {
+    margin-bottom: 10px;
+    /* Adiciona uma margem inferior para as perguntas */
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0;
+    align-items: center;
+    gap: 8px;
+}
+
+
+input {
+    all: unset;
+    border: 1px solid #94a3b9;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &:hover {
+
+        background-color: #a3e635;
+        opacity: 0.5;
+
+    }
+}
+
+body {
+    background-color: #0f172a;
+
+}
